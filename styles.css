@@ -6,9 +6,29 @@
 }
 
 @font-face {
-  font-family: "Mulish";
-  src: url("assets/fonts/Mulish-Medium.ttf");
-  font-weight: 500;
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter_28pt-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter_24pt-SemiBoldItalic.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter_24pt-Regular.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter_18pt-Medium.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter_18pt-Medium.ttf");
+  font-weight: 600;
 }
 
 html {
