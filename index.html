@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Coffee House</title>
 </head>
 <body>
-     <header></header>
-     <main></main>
-     <footer></footer>    
+    <header class="header container">
+        <div class="logo">
+            <a href="index.html" class="logo__link" aria-label="Resource Coffee House — Home">
+                <img src="assets/icons/logo.svg" alt="Resource Coffee House" class="logo__img">
+            </a>
+        </div>
+        <nav class="nav nav--main" aria-label="main navigation">
+            <ul class="nav__list">
+                <li><a href="#favorite">Favorite coffee</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#mobile">Mobile app</a></li>
+                <li><a href="#contacts">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="menu-holder">
+            <div class="theme-toggle-wrapper">
+                <button type="button" class="theme-toggle" aria-label="Switch theme">
+                    <img src="assets/icons/Light.svg" alt="Light Theme" class="light__toggle">
+                    <img src="assets/icons/Dark.svg" alt="Dark Theme" class="dark__toggle">              
+                </button>
+            </div>
+            <div class="menu-link">
+                <a href="catalog.html" class="menu-link__anchor">
+                    Menu
+                    <span class="menu-link__icon">
+                        <img src="assets/icons/coffee-cup.svg" alt="Coffee Cup" class="coffee_cup_icon">
+                    </span>
+                </a>
+            </div>
+        </div>     
+    </header>
+    <main class="container"></main>
+    <footer class="footer container"></footer>    
 </body>
 </html>

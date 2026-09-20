@@ -5,6 +5,12 @@
     padding: 0;
 }
 
+@font-face {
+  font-family: "Mulish";
+  src: url("assets/fonts/Mulish-Medium.ttf");
+  font-weight: 500;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -13,6 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: var(--background-page);
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -44,4 +51,124 @@ body {
     --dark-background-overlay: rgb(41 40 38 / 80%);
     --dark-border-primary: #665F55;
     --dark-border-inverse: #C1B6AD;
+}
+
+.a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 1.25rem 2.5rem;
+    min-height: 6.25rem;
+}
+.logo {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  width: 6.25rem;
+  height: 3.75rem;
+}
+
+.logo__link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo__img {
+  display: block;
+  height: 3.75rem;
+  width: auto;
+}
+
+.nav {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 0 1.25rem;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__list a {
+  display: inline-block;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav__list a:hover {
+  color: var(--text-accent);
+}
+
+.menu-holder {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 11.5rem;
+    gap: 1.5rem;
+}
+
+.theme-toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--background-page);
+  color: var(--text-primary);
+  width: 5.5rem;
+  height: 2.75rem;
+  padding: 0.2rem;  
+  border: 1px solid var(--border-primary);
+  transition: border-color 0.2s ease;
+  border-radius: 999px;  
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--text-primary);
+  color: var(--text-accent);
+
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--text-primary);
+  color: var(--text-accent);
+  outline-offset: 2px;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+}
+
+.menu-link__anchor {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.menu-link__anchor:hover {
+  color: var(--text-accent);
 }
