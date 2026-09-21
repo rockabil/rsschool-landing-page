@@ -286,3 +286,17 @@ em {
 .icon-social {
   margin-right: 0.75rem;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1.5rem;
+}
+
+.grid > * {
+  padding: 1rem;
+  background: var(--background-container);
+  color: var(--text-inverse);
+  border-radius: 0.5rem;
+}
