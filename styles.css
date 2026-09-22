@@ -47,8 +47,8 @@ body {
     justify-content: space-between;
     background-color: var(--background-page);
     margin: 0 auto;
-    min-height: 100vh;
-    padding: 0;
+    padding: 2.5rem;
+    min-height: 100vh;    
     width: 100%;
     font-family: "Inter", system-ui, sans-serif;
     font-weight: 400;
@@ -105,10 +105,9 @@ em {
     align-items: center;
     max-width: 1440px;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 2.5rem;
+    margin: 0 auto;    
 }
-
+ 
 .a {
     text-decoration: none;
 }
@@ -237,14 +236,12 @@ em {
 
 .footer {
   display: flex;
-  align-items: center;
-  flex-shrink: 0;     
+  align-items: center; 
+  width: 100%;    
   padding: 6.25rem;
-  border-radius: 40px;
-  margin-bottom: 1.25rem;
+  border-radius: 40px;  
   background: var(--background-container);
-  color: var(--text-inverse);
-  
+  color: var(--text-inverse);  
 }
 
 .footer-container {
@@ -252,10 +249,12 @@ em {
   flex-direction: row;
   justify-content: space-between;
   gap: 6.25rem;
+  width: 100%;
 }
 
 .footer-cell {
-  min-width: 33.125rem;
+  flex: 1 1 33.125rem;
+  min-width: 0;
 }
 
 .footer__list{
@@ -299,4 +298,26 @@ em {
   background: var(--background-container);
   color: var(--text-inverse);
   border-radius: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .footer-container {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .footer-cell {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 3rem 1.25rem;
+  }
 }
